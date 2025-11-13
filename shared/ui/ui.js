@@ -1,4 +1,5 @@
 import Image from "next/image"
+import styles from '../ui/ui.module.css';
 
 export const Cover = ({src}) =>{
     return(
@@ -8,7 +9,7 @@ export const Cover = ({src}) =>{
 
 export const Title = ({children}) =>{
     return(
-        <span>{children}</span>
+        <span className={styles.title}>{children}</span>
     )
 }
 
@@ -23,4 +24,5 @@ export const Duration = ({duration}) =>{
         <span>{duration}</span>
     )
 }
+
 
