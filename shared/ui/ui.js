@@ -1,9 +1,10 @@
 import Image from "next/image"
 import styles from '../ui/ui.module.css';
 
+
 export const Cover = ({src}) =>{
     return(
-        <Image scr={src} alt="обложка"/>
+        <Image src={src} alt="обложка"/>
     )
 }
 

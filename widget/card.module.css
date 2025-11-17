@@ -1,0 +1,18 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 9px 16px;
+    border-radius: 10px;
+}
+
+.naimg {
+    display: flex;
+    align-items: center;
+}
+
+.Cover {
+    border-radius: 14px;
+}
