@@ -5,8 +5,8 @@ import styles from './header.module.css'
 
 export const Header = () => {
     return(
-        <div>
-
+        <div className={styles.header}>
+            <Image src={logo} alt='лого' />
         </div>
     )
 }
