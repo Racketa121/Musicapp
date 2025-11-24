@@ -11,8 +11,16 @@
 .naimg {
     display: flex;
     align-items: center;
+    gap: 12px;
 }
 
 .Cover {
     border-radius: 14px;
 }
+
+.reaction {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+

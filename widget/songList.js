@@ -4,7 +4,7 @@ import { Card } from './card';
 
 export const SongList = () =>{
     return(
-        <div>
+        <div className={styles.tracklist}>
             {tracksList.map((track) =>{
                 return(
                 <Card key = {track.id} {...track}/>
