@@ -2,12 +2,12 @@ import styles from './songList.module.css';
 import tracksList from '@/assets/tracksList';
 import { Card } from './card';
 
-export const SongList = () =>{
+export const SongList = ({songs}) =>{
     return(
         <div className={styles.tracklist}>
-            {tracksList.map((track) =>{
+            {songs.map((track) =>{
                 return(
-                <Card key = {track.id} {...track}/>
+                    <Card key = {track.id} {...track}/>
                 )
             })}
             
