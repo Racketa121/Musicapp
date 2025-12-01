@@ -24,7 +24,7 @@ export default [
         "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/022/1000x0/looking-for-more-1633705232-L8MteCTyyQ.jpg",
       duration: 244,
       title: "Looking For More",
-      artists: "Anna Brilts",
+      artists: "Sergey Pro Master",
     },
     {
       id: 4,

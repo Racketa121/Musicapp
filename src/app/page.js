@@ -13,12 +13,12 @@ const RunQuery = (query) =>{
     return tracksList;
   }
 
-  const LowerCase = query.toLowerCase();
+  const lowerCase = query.toLowerCase();
 
-  return tracksList.filter((track)=>{
-    track.title.toLowerCase().includes(LowerCase) ||
-    track.artists.toLowerCase().includes(LowerCase);
-  })
+  return tracksList.filter((track)=>
+    track.title.toLowerCase().includes(lowerCase) ||
+    track.artists.toLowerCase().includes(lowerCase)
+  )
 }
 
 export default function Home() {

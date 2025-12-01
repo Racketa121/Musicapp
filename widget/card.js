@@ -8,18 +8,20 @@ import secondsToMMSS from "@/utils/secondsToMMSS";
 
 export const Card = (track) =>{
     const {id, src, preview, duration, title, artists} = track
-    const [color, setColor] = useState(false);
+    const [svgqq, setImage] = useState(false);
 
     const formatedDuration = secondsToMMSS(duration);
 
-    const handleChangeColor = () =>{
-        if(color){
-            setColor(false)
-            console.log(color)
+    const handleChangeImage = () =>{
+        if(svgqq){
+            setImage(false)
+            console.log(svgqq)
         }
         else{
-            setColor(true)
-            console.log(color)
+            setImage(true)
+            console.log(svgqq)
+            setImage(
+            )
         }
     }
 
@@ -33,10 +35,17 @@ export const Card = (track) =>{
                 </div>
             </div>
             <div className={styles.reaction}>
-                <div onClick={() => handleChangeColor()}>
+                <div onClick={() => handleChangeImage()}>                   
+                    <i className={styles.reaction_2}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill={"black"} class="bi bi-plus" viewBox="0 0 16 16">
+                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                        </svg>
+                    </i>
+                </div>
+                <div onClick={() => handleChangeImage()}>                   
                     <i class="bi bi-bookmark-plus">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill={color ? "orange" : "black"} class="bi bi-bookmark-plus-fill" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5m6.5-11a.5.5 0 0 0-1 0V6H6a.5.5 0 0 0 0 1h1.5v1.5a.5.5 0 0 0 1 0V7H10a.5.5 0 0 0 0-1H8.5z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
                         </svg>
                     </i>
                 </div>

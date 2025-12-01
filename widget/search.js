@@ -3,7 +3,7 @@ import styles from './search.module.css'
 export const Search = ({func}) =>{
     return(
         <div>
-            <input placeholder='поиск' onChange={func} />
+            <input className={styles.search} placeholder='Поиск...' onChange={func} />
         </div>
     )
 }
