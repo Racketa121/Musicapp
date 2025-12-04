@@ -5,7 +5,7 @@ import { Title } from "../../shared/ui/ui";
 import { Header } from "../../widget/header";
 import { SongList } from "../../widget/songList";
 import { Search } from "../../widget/search";
-import { Playing } from "../../widget/playing";
+import { Player } from "../../widget/player";
 import tracksList from "@/assets/tracksList";
 import { useState } from "react";
 
@@ -35,7 +35,7 @@ export default function Home() {
         <Header />
         <Search func={handleChange} />
         <SongList songs={songs} />
-        <Playing songs={songs}/>
+        <Player />
         <Header />
       </main>
     </div>
